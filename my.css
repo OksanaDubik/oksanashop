@@ -209,9 +209,124 @@ margin-bottom: 96px;
 
 
 /*подвал*/
+/*три иконки на черном фоне*/
 .footer{
     background:  #222224;
-    height: 341px;
+    height: 350px;
     width: 100%;
 margin-top: 191px;
 }
+.footer__nav{
+    padding-top: 104px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 104px;
+}
+.footer__nav__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__nav__img{
+    margin: 0 auto;
+justify-content: center;
+    padding-bottom: 28px;
+}
+.footer__nav__head{
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+
+}
+.footer__nav__text{
+    text-align: center;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    padding: 0 40px 0 40px;
+
+}
+/*беграунд -картинка*/
+section{
+    background: url("img/footer/background photo subscribe.png");
+    height: 448px;
+    width: 1600px;
+}
+.section__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 97px;
+    padding-bottom: 126px;
+
+}
+.communication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+
+}
+.communication__text{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-top: 15px;
+}
+.subscribe{
+    padding-right: 61px;
+}
+.subscribe__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+
+}
+.subscribe__text__bold{
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+form{
+    border: none;
+    padding-top: 32px;
+
+}
+.flex{
+    display: flex;
+}
+.form__text{
+    padding: 7px 64px 7px 22px;
+    border-radius: 25px 0 0 25px;
+    background:  #E1E1E1;
+    border: none;
+}
+.form__text::placeholder{
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.form__text:focus{
+    outline: none;
+    border: 1px solid red;
+}
+.form__button{
+border-radius: 0 25px 25px 0;
+    border: none;
+    background: #E05C6E;
+    padding: 18px;
+}
+
+
