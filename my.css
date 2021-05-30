@@ -235,6 +235,10 @@ font-weight: 400;
     line-height: 16px;
     color: #000000;
     padding: 25px 0 13px 18px;
+
+}
+.card__link{
+    text-decoration: none;
 }
 
 .card__caption {
@@ -547,4 +551,44 @@ form {
 }
 .png{
       margin-left: 90px;
+}
+
+.turn__pages{
+    display: flex;
+    /*justify-content: center;*/
+    border: 1px solid #EBEBEB;
+    width: 283px;
+    height: 43px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+}
+.turn__pages__box{
+    display: flex;
+    justify-content: space-around;
+    width: 203px;
+    height: 19px;
+    margin: 0 10px 0 -8px;
+padding-bottom: 4px;
+    align-items: center;
+}
+.turn__pages__link{
+    text-decoration: none;
+}
+.turn__pages__number{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5D5D;
+    padding-left: 10px;
+}
+
+.turn__pages__number:active{
+    color: #EF5B70;
+}
+.turn__pages__img{
+    align-items: center;
+    padding-top: 4px;
+/*padding-left: 10px;*/
 }

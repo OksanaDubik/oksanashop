@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,10 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-<header class="header">
-    <!--    менюшка-->
+<header>
     <nav class="block__wrap">
         <div class="container wrap">
             <div class="header__left">
@@ -24,122 +21,100 @@
             <div class="htader__right">
                 <img class="logo_right" src="img/main/header/menu32x23.svg" height="23" width="32" alt="menu">
                 <a class="logo_right" href="#"> <img class="logo_right" src="img/main/header/man29x29.svg" alt="#"></a>
-                <a class="logo_right" href="#"> <img class="logo_right" src="img/main/header/basket32x29.svg" alt="shopping"></a>
+                <a class="logo_right" href="#"> <img class="logo_right" src="img/main/header/basket32x29.svg"
+                                                     alt="shopping"></a>
 
             </div>
         </div>
     </nav>
+    <div class="menu__catalog__background">
+        <nav class="container menu__catalog">
+            <h2 class="header__catalog">NEW ARRIVALS </h2>
+            <p><span class="menu__header__catalog"> HOME</span> / <span class="menu__header__catalog">MEN</span> / <span
+                    class="menu__header__catalog">NEW ARRIVALS</span></p>
+        </nav>
+    </div>
 </header>
-<!--    верхняя картинка-->
 <main>
-    <div class="item__background">
-
-        <div class="container item">
-
-
-            <div class="item__text">
-                <h1 class="item__text__stile">
-                    <span class="text_bold">THE BRAND </span> <br>
-                    OF LUXERIOUS <span class="text_red"> FASHION</span>
-                </h1>
+    <div class="container  card__catalog">
+        <nav class="container catalog__card">
+            <div class="left__catalog__card">
+                <h4 class="catalog__card__filter">FILTER</h4>
+                <img src="img/catalog/filter.svg" alt="=">
             </div>
-            <div class="menu__item">
-                <button class="menu__button"> <img class="menu__item__x"  src="img/main/header/menu head.svg" alt="x"></button>
-
-                <ul class="menu__item__list">
-
-                    <li class="menu__item__header">MENU</li>
-                    <a href="catalog.html"> <ul class="menu__item__subtitle">MAN</ul></a>
-                    <li class="list__content">Accessories</li>
-                    <li class="list__content">Bags</li>
-                    <li class="list__content">Denim</li>
-                    <li class="list__content">T-Shirts</li>
-                    <ul class="menu__item__subtitle">WOMAN</ul>
-                    <li class="list__content">Accessories</li>
-                    <li class="list__content">Jackets & Coats</li>
-                    <li class="list__content">Polos</li>
-                    <li class="list__content">T-Shirts</li>
-                    <li class="list__content">Shirts</li>
-                    <ul class="menu__item__subtitle">KIDS</ul>
-                    <li class="list__content">Accessories</li>
-                    <li class="list__content">Jackets & Coats</li>
-                    <li class="list__content">Polos</li>
-                    <li class="list__content">T-Shirts</li>
-                    <li class="list__content">Shirts</li>
-                    <li class="list__content">Bags</li>
-                </ul>
-
-            </div>
-
-
-        </div>
-    </div>
-
-    <!--средний блок-->
-    <div class="block">
-        <div class="container block_section">
-            <div class="block__top__section">
-                <div class="block__text block__woman"><h2 class="top__text__block">30% OFF<br><span
-                        class="bottom__text__block">
-                    FOR WOMEN</span></h2></div>
-                <div class="block__text block__men"><h2 class="top__text__block">HOT DEAL<br><span
-                        class="bottom__text__block">
-                    FOR MEN</span></h2></div>
-                <div class="block__text block__kids"><h2 class="top__text__block">NEW ARRIVALS<br><span
-                        class="bottom__text__block">
-                    FOR KIDS</span></h2></div>
-            </div>
-            <div class="block__bottom__section">
-                <div class="block__text block__accesories"><h2 class="top__text__block">LUXIROUS & TRENDY<br><span
-                        class="bottom__text__block">
-                    ACCESORIES</span></h2>
+            <div class="right__catalog__card">
+                <div class="right__catalog">
+                    <h4 class="catalog__card__nav">TRENDING NOW</h4>
+                    <img class="catalog__style" src="img/catalog/^.svg" alt="v">
                 </div>
+                <div class="right__catalog"><h4 class="catalog__card__nav">SIZE </h4>
+                    <img class="catalog__style" src="img/catalog/^.svg" alt="v">
+                </div>
+                <div class="right__catalog"><h4 class="catalog__card__nav">PRICE</h4>
+                    <img class="catalog__style" src="img/catalog/^.svg" alt="v"></div>
             </div>
-        </div>
+        </nav>
     </div>
-
-
-    <!--   карты товаров-->
-    <div class="container card">
-        <div class="card__header"><h2 class="header__text__card">Fetured Items</h2>
-            <h4 class="card__header__text">Shop for items based on what we featured in this week</h4>
-        </div>
+    <div class="container card__catalog">
         <div class="container card__features">
-            <div class="card__product"><img src="img/main/map/map1.png" alt="photo">
+
+
+            <div class="card__product "><img src="img/main/map/map1.png" alt="photo">
+
+
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
-            <div class="card__product"><img src="img/main/map/map2.png" alt="photo">
+
+
+            <div class="card__product catal__background__card"><img class="png" src="img/main/map/map7 .png"
+                                                                    alt="photo">
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
-            <div class="card__product"><img src="img/main/map/map3.png" alt="photo">
+
+
+            <div class="card__product catalog__background__card"><img src="img/main/map/map3.png" alt="photo">
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
-            <div class="card__product"><img src="img/main/map/map4.png" alt="photo">
+            <div class="card__product catalog__background__card"><img src="img/main/map/map4.png" alt="photo">
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
-            <div class="card__product"><img src="img/main/map/map5.png" alt="photo">
+            <div class="card__product catalog__background__card"><img src="img/main/map/map8.jpg" alt="photo">
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
-            <div class="card__product"><img src="img/main/map/map6.png" alt="photo">
+            <div class="card__product catalog__background__card"><img src="img/main/map/map9.jpg" alt="photo">
                 <a class="card__link" href="#"><h3 class="caption">ELLERY X M'O CAPSULE</h3></a>
                 <p class="card__caption">Known for her sculptural takes on traditional tailoring, Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 <h3 class="card__price">$52.00</h3></div>
         </div>
-        <buttom><h3 class="buttom__card">Browse All Product</h3></buttom>
-    </div>
-</main>
 
+    </div>
+    <div class="container turn__pages">
+        <img class="turn__pages__img" src="img/catalog/pagesBefore.svg" height="14" width="9" alt="<">
+        <div class="turn__pages__box">
+            <p>
+                <a class="turn__pages__link" href="#"> <span class="turn__pages__number"> 1</span></a> <a class="turn__pages__link" href="#"><span class="turn__pages__number">2</span></a> <a  class="turn__pages__link" href="#"> <span
+                    class="turn__pages__number">3</span></a> <a class="turn__pages__link" href="#"><span class="turn__pages__number">4</span></a> <a class="turn__pages__link" href="#"><span
+                    class="turn__pages__number">5</span></a> <a class="turn__pages__link" href="#"><span class="turn__pages__number">6</span></a>.....<a class="turn__pages__link" href="#"><span
+                    class="turn__pages__number">20</span></a>
+            </p>
+        </div>
+            <img class="turn__pages__img" src="img/catalog/pagesAfter.svg" height="14" width="9" alt=">">
+
+    </div>
+
+
+</main>
 
 <footer class="footer">
     <nav class="container footer__nav">
@@ -201,7 +176,5 @@
     </div>
 
 </footer>
-
-
 </body>
 </html>
