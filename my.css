@@ -1,5 +1,4 @@
 
-
 body {
     font-family: Lato;
 }
@@ -101,32 +100,37 @@ body {
     padding-left: 33px;
 
 }
-.menu__button{
+
+.menu__button {
     border: none;
     background: none;
     cursor: pointer;
 
 }
+
 /*.menu__button:active{*/
 /*    display:none;*/
 /*}*/
-.menu__item__x{
-    margin:16px 17px 9px 158px;
+.menu__item__x {
+    margin: 16px 17px 9px 158px;
     width: 12px;
     height: 12px;
     color: #6F6E6E;
 }
-.menu__item__list{
+
+.menu__item__list {
     list-style: none;
 }
-.menu__item__header{
+
+.menu__item__header {
     padding-bottom: 24px;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
     font-weight: 700;
 }
-.menu__item__subtitle{
+
+.menu__item__subtitle {
     padding-bottom: 12px;
     font-size: 14px;
     line-height: 17px;
@@ -134,13 +138,14 @@ body {
     font-weight: 400;
 
 }
-.list__content{
+
+.list__content {
     padding-bottom: 11px;
     padding-left: 21px;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-font-weight: 400;
+    font-weight: 400;
 }
 
 
@@ -224,7 +229,7 @@ font-weight: 400;
 
 .card__product {
     width: 360px;
-    margin(none: nth-child(3)): 0 30 px 30 px 0;
+margin(none: nth-child(3)): 0 30 px 30 px 0;
     background: #F8F8F8;
     margin-bottom: 30px;
 }
@@ -237,7 +242,8 @@ font-weight: 400;
     padding: 25px 0 13px 18px;
 
 }
-.card__link{
+
+.card__link {
     text-decoration: none;
 }
 
@@ -444,118 +450,205 @@ form {
     padding-top: 24px;
 }
 
-.footer__bottom__icon {
-    /*border:1px solid  #F16D7F;*/
+.footer__bottom__contact {
+    position: absolute;
+    right: 240px;
+}
+
+svg.footer__bottom__icon {
+
     width: 32px;
     height: 32px;
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 9px;
+
 }
 
-.footer__bottom__icon:active {
+svg.footer__bottom__icon:hover {
+
     background: #F16D7F;
     width: 32px;
     height: 32px;
-    color: white;
+    fill: #fffdfe;
+    padding: 9px;
+
 }
 
+
 /*страница каталога*/
-.menu__catalog__background{
+.menu__catalog__background {
     background: #F8F3F4;
     height: 148px;
     width: 100%;
     padding-top: 59px;
 }
-.menu__catalog{
+
+.menu__catalog {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.header__catalog{
+
+.header__catalog {
     font-size: 24px;
     line-height: 29px;
     color: #F16D7F;
 
 }
-.menu__header__catalog{
+
+.menu__header__catalog {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
 }
-.menu__header__catalog:hover{
-    color: #F16D7F ;
+
+.menu__header__catalog:hover {
+    color: #F16D7F;
     font-weight: 700;
 }
-.card__catalog{
+
+.card__catalog {
     display: flex;
     justify-content: space-between;
     padding-top: 51px;
 }
-.catalog__card{
+/*каталог фильтра*/
+
+.catalog__card {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
+
 }
 
-.left__catalog__card{
+.left__catalog__card {
     width: 40%;
     display: flex;
     justify-content: flex-start;
+    /*position: absolute;*/
 
 
 }
-.catalog__card__filter{
+
+
+.left__catalog__card__filter{
+    position: absolute;
+    background: url("img/catalog/catalogFilter.png");
+    box-shadow: 6px 4px 35px rgba(0,0,0,35);
+}
+
+h4.menu__catalog {
     margin-right: 11px;
 }
-.right__catalog__card{
+
+.left__catalog__card__header {
+    display: flex;
+}
+
+.left__catalog__card__list {
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+}
+
+summary.list {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    display: block;
+    height: 37px;
+    border-left: 5px solid #EF5B70;
+    margin-top: 38px;
+    padding: 10px;
+}
+
+ul {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style: none;
+}
+
+.left__catalog__card__section {
+    padding: 11px;
+    padding-left: 17px;
+}
+
+
+::-webkit-details-marker {
+    display: none
+}
+
+/*.filter__catalog__list{*/
+/*    width: 360px;*/
+/*    height: 531px;*/
+/*    background: url("img/catalog/catalogFilter.png");*/
+/*    padding: 13px 0 17px 16px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    !*display: none;*!*/
+/*}*/
+
+svg.catalog__card__filter {
+    margin-top: 7px;
+    margin-left: 11px;
+}
+
+.right__catalog__card {
     width: 75%;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
-.right__catalog{
+
+.right__catalog {
     margin-right: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.catalog__card__nav{
+
+.catalog__card__nav {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     padding-right: 10px;
 
+
 }
-.catalog__style{
+
+.catalog__style {
     width: 10px;
     height: 5px;
 }
-/*.catalog__background__card{*/
-/*    display: none;*/
-/*}*/
-/*.catalog__background__card:hover{*/
-/*    background: #c67971;*/
-/*    height: 420px;*/
-/*}*/
 
-.catal__background__card{
-
+/*розовый фон на карточке*/
+.catal__background__card {
     margin-bottom: 35px;
 }
-.catal__background__card:hover{
+
+.catal__background__card:hover {
 
     background: url("img/main/map/map7-2.jpg");
     background-repeat: no-repeat;
 }
-.png{
-      margin-left: 90px;
+
+.png {
+    margin-left: 90px;
+    margin-bottom: 24px;
 }
 
-.turn__pages{
+/*форма для перелистывания страниц*/
+
+.turn__pages {
     display: flex;
-    /*justify-content: center;*/
     border: 1px solid #EBEBEB;
     width: 283px;
     height: 43px;
@@ -564,19 +657,22 @@ form {
     padding-right: 16px;
     justify-content: space-between;
 }
-.turn__pages__box{
+
+.turn__pages__box {
     display: flex;
     justify-content: space-around;
     width: 203px;
     height: 19px;
     margin: 0 10px 0 -8px;
-padding-bottom: 4px;
+    padding-bottom: 4px;
     align-items: center;
 }
-.turn__pages__link{
+
+.turn__pages__link {
     text-decoration: none;
 }
-.turn__pages__number{
+
+.turn__pages__number {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -584,11 +680,12 @@ padding-bottom: 4px;
     padding-left: 10px;
 }
 
-.turn__pages__number:active{
+.turn__pages__number:active {
     color: #EF5B70;
 }
-.turn__pages__img{
+
+.turn__pages__img {
     align-items: center;
     padding-top: 4px;
-/*padding-left: 10px;*/
+
 }
