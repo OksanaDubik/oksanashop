@@ -10,7 +10,6 @@ body {
     max-width: 1600px;
     box-sizing: border-box;
 }
-
 .container {
     max-width: 1140px;
     padding: 0;
@@ -914,6 +913,7 @@ svg.product__background__turn__right:active{
     margin: 48px 0 65px 0;
     padding: 14px 56px 14px 26px;
     background: none;
+    cursor: pointer;
 }
 .basket__text {
     font-size: 16px;
