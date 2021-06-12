@@ -236,6 +236,30 @@ height: calc(100vh - 80px);
     text-align: center;
     margin-bottom: 48px;
 }
+.hover{
+    position: relative;
+}
+
+.hover:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
 
 .card__header__text {
     font-size: 14px;
