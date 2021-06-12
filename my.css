@@ -7,7 +7,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    max-width: 1600px;
+    max-width: 100vw;
     box-sizing: border-box;
 }
 
@@ -16,6 +16,9 @@ body {
     padding: 0;
     width: 100%;
     margin: 0 auto;
+}
+.header{
+    max-width: 100vw;
 }
 
 /*верхняя менюшка*/
@@ -42,6 +45,11 @@ body {
 .logo_right:not(:last-child) {
     margin: 0 33px 0 0;
 }
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 /*верхняя картинка*/
 .item__background {
@@ -59,7 +67,8 @@ body {
     height: 764px;
     /*background-size: 65%;*/
     background-position: -228px 0;
-
+height: calc(100vh - 80px);
+    background-size: 100vh;
 }
 
 .item__text {
@@ -91,26 +100,38 @@ body {
 
 .menu__item {
     width: 232px;
-    height: 764px;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
     position: absolute;
     right: 0;
+    top: 80px;
     padding-left: 33px;
-
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
-.menu__button {
+.nav__close {
     border: none;
     background: none;
     cursor: pointer;
 
 }
+.header__menu{
+    padding-right: 33px;
+}
 
-/*.menu__button:active{*/
-/*    display:none;*/
-/*}*/
+#burger{
+    visibility: hidden;
+}
+
+#burger:checked~.header__nav{
+    display: block;
+}
+#burger:not(checked)~.header__nav{
+    display: none;
+}
+
 .menu__item__x {
     margin: 16px 17px 9px 158px;
     width: 12px;
@@ -120,7 +141,12 @@ body {
 
 .menu__item__list {
     list-style: none;
+
 }
+.menu__item__list a{
+    text-decoration: none;
+}
+
 
 .menu__item__header {
     padding-bottom: 24px;
