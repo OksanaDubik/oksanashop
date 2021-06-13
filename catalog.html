@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="header">
+    <!--    менюшка-->
     <nav class="block__wrap">
         <div class="container wrap">
             <div class="header__left">
@@ -19,7 +20,82 @@
                 <img class="logo" src="img/main/header/circkle26x27.svg" height="28" width="27" alt="quest">
             </div>
             <div class="header__right">
-                <img class="logo_right" src="img/main/header/menu32x23.svg" height="23" width="32" alt="menu">
+
+                <input type="checkbox" id="burger">
+                <label class="header__menu" for="burger">
+                    <img class="logo_right" src="img/main/header/menu32x23.svg" height="23" width="32" alt="menu">
+                </label>
+                <nav class="header__nav nav">
+                    <div class="menu__item">
+                        <label class="nav__close" for="burger"> <img class="menu__item__x"
+                                                                     src="img/main/header/menu head.svg"
+                                                                     alt="x"></label>
+
+                        <ul class="menu__item__list">
+
+                            <li class="menu__item__header">MENU</li>
+                            <a href="catalog.html" target="_blank">
+                                <ul class="menu__item__subtitle">MAN</ul>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Accessories</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Bags</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Denim</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">T-Shirts</li>
+                            </a>
+
+                            <a href="catalog.html" target="_blank">
+                                <ul class="menu__item__subtitle">WOMAN</ul>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Accessories</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Jackets & Coats</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Polos</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">T-Shirts</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Shirts</li>
+                            </a>
+
+                            <a href="catalog.html" target="_blank">
+                                <ul class="menu__item__subtitle">KIDS</ul>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Accessories</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Jackets & Coats</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Polos</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">T-Shirts</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Shirts</li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="list__content">Bags</li>
+                            </a>
+                        </ul>
+
+                    </div>
+                </nav>
+
+
                 <a class="logo_right" href="#"> <img class="logo_right" src="img/main/header/man29x29.svg" alt="#"></a>
                 <a class="logo_right" href="#"> <img class="logo_right" src="img/main/header/basket32x29.svg"
                                                      alt="shopping"></a>
@@ -37,10 +113,10 @@
 </header>
 <main>
     <div class="container  card__catalog">
-        <nav class="container catalog__card">
 
-            <!--  всплывающее меню фильтр        -->
-            <div class="left__catalog__card__filter">
+
+        <!--  всплывающее меню фильтр        -->
+        <div class="left__catalog__card__filter">
             <details class="left__catalog__card">
                 <summary class="left__catalog__card__header">
                     <h4 class="catalog__card__filter">FILTER</h4>
@@ -54,17 +130,37 @@
                     <summary class="left__catalog__card__header list">CATEGORY</summary>
 
 
-                    <ul >
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Accessories</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Bags</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Hoodies & Sweatshirts</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Jackets & Coats</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Polos</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Shirts</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Shoes</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Sweaters & Knits</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">T-Shirts</li></a>
-                        <a class="left__catalog__card__section" href="#"> <li class="left__catalog__card__section">Tanks</li></a>
+                    <ul>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Accessories</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Bags</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Hoodies & Sweatshirts</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Jackets & Coats</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Polos</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Shirts</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Shoes</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Sweaters & Knits</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">T-Shirts</li>
+                        </a>
+                        <a class="left__catalog__card__section" href="#">
+                            <li class="left__catalog__card__section">Tanks</li>
+                        </a>
 
                     </ul>
                 </details>
@@ -82,35 +178,54 @@
 
 
             </details>
+        </div>
+
+        <div class="right__catalog__card">
+
+            <div class="right__catalog">
+                <h4 class="catalog__card__nav">TRENDING NOW</h4>
+                <img class="catalog__style" src="img/catalog/^.svg" alt="v">
             </div>
 
-            <div class="right__catalog__card">
-                <div class="right__catalog">
-                    <h4 class="catalog__card__nav">TRENDING NOW</h4>
-                    <img class="catalog__style" src="img/catalog/^.svg" alt="v">
-                </div>
 
+            <!--                всплывающее меню размер-->
 
-
-<!--                всплывающее меню размер-->
-                <div class="right__catalog">
+            <div class=" right__catalog ">
                 <details class="right__catalog__size">
 
-                    <summary class="right__catalog"> <h4 class="catalog__card__nav">SIZE </h4>
-                    <img class="catalog__style" src="img/catalog/^.svg" alt="v">
+                    <summary class="right__catalog"><h4 class="catalog__card__nav">SIZE </h4>
+                        <img class="catalog__style" src="img/catalog/^.svg" alt="v">
                     </summary>
 
-                    <label><h4>XS</h4><input class="right__catalog__size" type="checkbox" name="XS"></label>
-                    <label><h4>S</h4><input class="right__catalog__size" type="checkbox" name="XS"></label>
-                    <label><h4>M</h4><input class="right__catalog__size" type="checkbox" name="XS"></label>
-                    <label><h4>L</h4><input class="right__catalog__size" type="checkbox" name="XS"></label>
+                    <label>
+
+                        <div class="catalog__input"><input type="checkbox" name="XS"></div>
+                        <div class="catalog__size"><h4>XS</h4></div>
+                    </label>
+                    <label>
+
+                        <div class="catalog__input"><input type="checkbox" name="XS"></div>
+                        <div class="catalog__size"><h4>S</h4></div>
+                    </label>
+
+                    <label>
+
+                        <div class="catalog__input"><input type="checkbox" name="XS"></div>
+                        <div class="catalog__size"><h4>M</h4></div>
+                    </label>
+                    <label>
+
+                        <div class="catalog__input"><input type="checkbox" name="XS"></div>
+                        <div class="catalog__size"><h4>L</h4></div>
+                    </label>
 
                 </details>
-                </div>
-                <div class="right__catalog"><h4 class="catalog__card__nav">PRICE</h4>
-                    <img class="catalog__style" src="img/catalog/^.svg" alt="v"></div>
             </div>
-        </nav>
+
+            <div class="right__catalog"><h4 class="catalog__card__nav">PRICE</h4>
+                <img class="catalog__style" src="img/catalog/^.svg" alt="v"></div>
+
+        </div>
     </div>
     <div class="container card__catalog">
         <div class="container card__features">
