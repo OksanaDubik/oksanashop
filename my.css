@@ -1146,8 +1146,14 @@ button:hover {
 
 
 @media (max-width: 1024px) {
+
+    /*главн страница*/
     .wrap {
         padding: 19px 16px;
+    }
+    .menu__catalog__background{
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .item {
@@ -1192,6 +1198,29 @@ button:hover {
     .block_section {
         padding-right: 15px;
         padding-left: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .block__woman {
+        width: 232px;
+        height: 168px;
+        background-image: url("img/main/block/prtview768.png"), url("img/main/block/women768.png");
+        background-repeat: no-repeat;
+    }
+
+    .block__men {
+        width: 232px;
+        height: 168px;
+        background-image: url("img/main/block/prtview768.png"), url("img/main/block/for men768.png");
+        background-repeat: no-repeat;
+    }
+
+    .block__kids {
+        width: 232px;
+        height: 168px;
+        background-image: url("img/main/block/prtview768.png"), url("img/main/block/kids768.png");
+        background-repeat: no-repeat;
     }
 
     .block__men {
@@ -1252,6 +1281,26 @@ button:hover {
     .footer__bottom__address {
         padding: 24px 16px 0;
     }
+    /*стр catalog*/
+    .right__catalog__card{
+        right: 7%;
+    }
+    .left__catalog__card__filter{
+        left: 10%;
+    }
+    .left__catalog__card{
+        padding-left: 0;
+    }
+    .catalog__background__card:nth-of-type(3){
+        display: none;
+    }
+    .footer{
+        margin-top: 63px;
+    }
+    .turn__pages{
+        margin-top: 24px;
+    }
+
 
 }
 
@@ -1263,8 +1312,16 @@ button:hover {
         background-size: 50%;
     }
 
+    .menu__catalog {
+        padding: 0 16px;
+    }
+
     .menu__item {
         height: auto;
+    }
+
+       .catalog__background__card:nth-of-type(3) {
+        display: none;
     }
 
     section {
@@ -1272,9 +1329,44 @@ button:hover {
         background-size: 1600px;
         background: url("img/main/footer/background1024.png");
     }
+    /*стр catalog*/
+    .left__catalog__card__filter{
+        left: 3%;
+    }
+    .right__catalog__card{
+        right: 0;
+    }
+    .turn__pages{
+        margin-top: 56px;
+    }
+    .footer{
+        margin-top: 63px;
+    }
+    section{
+        width: 768px;
+        height: 693px;
+    }
+    .communication{
+        margin: 0 0 48px 0;
+    }
+    .subscribe{
+        padding-right: 0;
+    }
+/* стр product   */
+    .product__description{
+        max-width: 768px;
+    }
+    .product__card{
+        max-width: 768px;
+        justify-content: space-around;
+
+    }
+    .card__product:nth-child(3) {
+        display: none;
+    }
 }
 
-@media (min-width: 667px) {
+@media (max-width: 667px) {
     .logo__men {
         display: none;
     }
@@ -1288,12 +1380,38 @@ button:hover {
     }
 
     .block_section {
-        margin-right: 147px;
-        margin-left: 147px;
+        margin-left: 22%;
+
     }
 
     .block__top__section {
         flex-wrap: wrap;
+
+    }
+
+    .block__woman {
+        background-image: url("img/main/block/women.png");
+        width: 360px;
+        height: 260px;
+    }
+
+    .block__men {
+        background-image: url("img/main/block/for men.png");
+        width: 360px;
+        height: 260px;
+    }
+
+    .block__kids {
+        background-image: url("img/main/block/kids.png");
+        width: 360px;
+        height: 260px;
+    }
+
+    .block__accesories {
+        background-image: url("img/main/block/accesories.png");
+        background-repeat: no-repeat;
+        margin-left: -23%;
+
     }
 
     .buttom__card {
@@ -1314,18 +1432,11 @@ button:hover {
         padding-top: 20px;
     }
 
-    .block__accesories {
-        background-image: url("img/main/block/accesories.png");
-        background-size: 100vw;
-        margin-left: -147px;
-    }
-
     .footer__bottom__address {
         height: 143px;
         display: flex;
         flex-direction: column-reverse;
         padding-bottom: 9px;
-        /* height: auto; */
         padding-top: 40px;
     }
 
@@ -1368,7 +1479,7 @@ button:hover {
     }
 
     .block__top__section {
-        flex-wrap: wrap;
+        margin-left: -26%;
     }
 
     .block__men {
