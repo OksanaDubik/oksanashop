@@ -1,6 +1,7 @@
 
 body {
     font-family: Lato;
+    min-height: 100vh;
 }
 
 
@@ -1118,6 +1119,7 @@ label {
     display: flex;
 }
 
+
 button:hover {
     transition: all 5s;
     border-radius: 10px;
@@ -1176,7 +1178,14 @@ button:hover {
 .loyalty ul {
     margin-left: 23px;
 }
-
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.central{
+    flex-grow: 1;
+}
 
 /*медиазапрсы адаптивность*/
 
