@@ -151,6 +151,12 @@ body {
     text-decoration: none;
 }
 
+.list__content a {
+    text-decoration: none;
+    color: #6F6E6E;
+
+}
+
 .menu__item__header {
     padding-bottom: 24px;
     font-size: 14px;
@@ -167,6 +173,9 @@ body {
     font-weight: 400;
 }
 
+.menu__item__subtitle a{
+    color: #F16D7F;
+}
 .list__content {
     padding-bottom: 11px;
     padding-left: 21px;
@@ -174,7 +183,12 @@ body {
     line-height: 17px;
     color: #6F6E6E;
     font-weight: 400;
+    text-decoration: none;
 }
+.list__content a{
+    color: #6F6E6E;
+}
+
 
 /*средний блок*/
 .block__top__section {
@@ -328,14 +342,17 @@ body {
     color: #F26376;
     position: absolute;
     left: 42%;
-    margin-top: 49px;
-    margin-bottom: 96px;
+
     cursor: pointer;
 }
 
 .buttom__card:active {
     background: #E05C6E;
     color: #FFFFFF;
+}
+.card{
+    border: none;
+    background: none;
 }
 
 /*подвал*/
@@ -352,6 +369,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 104px;
+    margin-top: 104px;
 }
 
 .footer__nav__box {
@@ -685,15 +703,12 @@ svg.catalog__card__filter {
     margin-left: 400px;
 }
 
-.right__catalog:nth-child(2) {
-    /*margin-left: 29px;*/
-    /*margin-right: 29px;*/
-}
 
-.card__catalog__top
+
+
     /*всплывающее меню size*/
 .right__catalog {
-    /*margin-left: 29px;*/
+
     margin-right: 29px;
     display: flex;
     justify-content: space-between;
@@ -829,41 +844,43 @@ label {
     z-index: -1;
 }
 
-.product__background:hover svg {
-    fill: #e05c6e;
-}
+
 
 .product__background__photo {
     margin-top: -57px;
     position: absolute;
 }
 
-.product__background__turn__left {
+.arrow__left {
     background: rgba(42, 42, 42, 0.15);
     width: 47px;
     height: 47px;
     position: absolute;
     left: 0;
     padding: 12px 17px;
-    fill: #000000;
+    fill: #101010;
 }
 
-.product__background__turn__left:hover .product__background__turn__left {
+
+
+.arrow__left:hover{
+    background: rgba(42, 42, 42, 0.15);
     fill: #F16D7F;
 }
 
-svg.product__background__turn__right {
+
+
+
+.arrow__right {
     background: rgba(42, 42, 42, 0.15);
     width: 47px;
     height: 47px;
     position: absolute;
     right: 0;
     padding: 12px 17px;
-    fill: #000000;
 }
 
-.product__background__turn__right:hover {
-
+.arrow__right:hover {
     fill: #F16D7F;
 }
 
