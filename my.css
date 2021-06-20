@@ -1,6 +1,7 @@
 
 body {
     font-family: Lato;
+    min-height: 100vh;
 }
 
 
@@ -173,9 +174,10 @@ body {
     font-weight: 400;
 }
 
-.menu__item__subtitle a{
+.menu__item__subtitle a {
     color: #F16D7F;
 }
+
 .list__content {
     padding-bottom: 11px;
     padding-left: 21px;
@@ -185,7 +187,8 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
-.list__content a{
+
+.list__content a {
     color: #6F6E6E;
 }
 
@@ -215,7 +218,7 @@ body {
 }
 
 .block__men {
-    background-image: url("img/main/block/for men.png");
+    background-image: url("img/main/block/for-men.png");
 }
 
 .block__kids {
@@ -299,10 +302,10 @@ body {
 
 .card__product {
     width: 360px;
-    /*    margin(none: nth-child(3)): 0 30px 30 px 0;*/
     background: #F8F8F8;
     margin-bottom: 30px;
 }
+
 
 .caption {
     text-align: left;
@@ -350,7 +353,8 @@ body {
     background: #E05C6E;
     color: #FFFFFF;
 }
-.card{
+
+.card {
     border: none;
     background: none;
 }
@@ -369,7 +373,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 104px;
-    margin-top: 104px;
 }
 
 .footer__nav__box {
@@ -405,7 +408,7 @@ body {
 
 /*беграунд -картинка*/
 section {
-    background: url("img/main/footer/background photo subscribe.png");
+    background: url("img/main/footer/background-photo-subscribe.png");
     height: 448px;
     display: flex;
     justify-content: center;
@@ -535,7 +538,8 @@ svg.footer__bottom__icon:hover {
     padding: 9px;
 
 }
-.footer__bottom__contact a{
+
+.footer__bottom__contact a {
     text-decoration: none;
 }
 
@@ -601,7 +605,7 @@ svg.footer__bottom__icon:hover {
     position: relative;
     width: 360px;
     padding-top: 16px;
-    padding-left: 11px;
+    padding-left: 17px;
 }
 
 .left__catalog__card::-webkit-details-marker {
@@ -627,6 +631,7 @@ svg.footer__bottom__icon:hover {
     width: 360px;
     height: 531px;
     z-index: 1;
+    left: 230px;
 }
 
 h4.menu__catalog {
@@ -666,7 +671,7 @@ ul {
 
 .left__catalog__card__section {
     padding-bottom: 11px;
-    padding-left: 17px;
+    padding-left: 10px;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -698,15 +703,14 @@ svg.catalog__card__filter {
 .right__catalog__card {
     box-sizing: border-box;
     display: flex;
-    /*align-items: center;*/
     position: absolute;
-    margin-left: 400px;
+    width: 411px;
+    margin-left: 368px;
+    justify-content: space-around;
 }
 
 
-
-
-    /*всплывающее меню size*/
+/*всплывающее меню size*/
 .right__catalog {
 
     margin-right: 29px;
@@ -716,9 +720,13 @@ svg.catalog__card__filter {
     box-sizing: border-box;
 }
 
+.catalog__input {
+    display: flex;
+}
+
 .right__catalog__size {
     width: 79px;
-    position: relative;
+    position: absolute;
 }
 
 .right__catalog__size::-webkit-details-marker {
@@ -730,7 +738,6 @@ svg.catalog__card__filter {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 79px;
     z-index: 1;
-    /*position: relative;*/
     padding: 5px;
 }
 
@@ -845,7 +852,6 @@ label {
 }
 
 
-
 .product__background__photo {
     margin-top: -57px;
     position: absolute;
@@ -862,13 +868,11 @@ label {
 }
 
 
-
 .arrow__left:hover{
     background: rgba(42, 42, 42, 0.15);
     fill: #F16D7F;
+
 }
-
-
 
 
 .arrow__right {
@@ -988,6 +992,10 @@ label {
     cursor: pointer;
 }
 
+.basket a {
+    display: flex;
+}
+
 .basket__link :hover {
     transition: all 1s;
     background: url("img/main/map/map6.png");
@@ -1058,7 +1066,7 @@ label {
     display: flex;
     flex-direction: column;
     background: none;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .registration__form h4 {
@@ -1083,9 +1091,25 @@ label {
     align-items: baseline;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 132px;
+    width: 208px;
     margin-left: -10px;
 }
+
+.registration__radio__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 70%;
+}
+
+.registration__radio__righ {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 30%;
+    opacity: 0;
+}
+
 
 .registration__radio input {
     margin-top: 0;
@@ -1116,7 +1140,16 @@ label {
     border: none;
     cursor: pointer;
     display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fbfbfb;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-left: 20px;
+
 }
+
 
 button:hover {
     transition: all 5s;
@@ -1140,7 +1173,7 @@ button:hover {
 
 .registration__btn svg {
     fill: white;
-    margin: 20px 15px 20px 0;
+    margin: 20px 15px 20px 15px;
 }
 
 .loyalty {
@@ -1177,6 +1210,15 @@ button:hover {
     margin-left: 23px;
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.central {
+    flex-grow: 1;
+}
 
 /*медиазапрсы адаптивность*/
 
@@ -1231,6 +1273,14 @@ button:hover {
         color: #222222;
     }
 
+    .card__product:nth-child(3) {
+        display: none;
+    }
+
+    .product__card {
+        justify-content: space-evenly;
+    }
+
 
     .block_section {
         padding-right: 15px;
@@ -1249,7 +1299,7 @@ button:hover {
     .block__men {
         width: 232px;
         height: 168px;
-        background-image: url("img/main/block/prtview768.png"), url("img/main/block/for men768.png");
+        background-image: url("img/main/block/prtview768.png"), url("img/main/block/for-men768.png");
         background-repeat: no-repeat;
     }
 
@@ -1310,9 +1360,7 @@ button:hover {
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-        /*font-style: italic;*/
         color: #222224;
-
     }
 
     .footer__bottom__address {
@@ -1344,6 +1392,39 @@ button:hover {
         margin-top: 24px;
     }
 
+    /*    registration*/
+    .loyalty {
+        margin-left: 0;
+        width: 35%;
+    }
+
+    .loyalty header {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+
+    .loyalty p {
+        font-size: 16px;
+        line-height: 19px
+    }
+
+    .loyalty li {
+        font-size: 16px;
+        line-height: 19px
+    }
+
+    .registration {
+        padding-top: 40px;
+        justify-content: space-evenly;
+        padding-bottom: 96px;
+
+    }
+
+    .registration__radio__righ {
+        opacity: 1;
+    }
+
 
 }
 
@@ -1367,10 +1448,15 @@ button:hover {
         display: none;
     }
 
+
     section {
         box-sizing: border-box;
         background-size: 1600px;
         background: url("img/main/footer/background1024.png");
+    }
+
+    .footer {
+        margin-top: 102px;
     }
 
     /*стр catalog*/
@@ -1386,10 +1472,9 @@ button:hover {
         margin-top: 56px;
     }
 
-    .footer {
-        margin-top: 63px;
-    }
-
+    /*.footer {*/
+    /*    margin-top: 63px;*/
+    /*}*/
     section {
         width: 768px;
         height: 693px;
@@ -1417,6 +1502,10 @@ button:hover {
     .card__product:nth-child(3) {
         display: none;
     }
+
+    /*img.card__map {*/
+    /*    display: block;*/
+    /*}*/
 }
 
 @media (max-width: 667px) {
@@ -1449,7 +1538,7 @@ button:hover {
     }
 
     .block__men {
-        background-image: url("img/main/block/for men.png");
+        background-image: url("img/main/block/for-men.png");
         width: 360px;
         height: 260px;
     }
@@ -1496,23 +1585,49 @@ button:hover {
     .footer__bottom {
         height: 143px;
     }
-    .right__catalog{
+
+    .right__catalog {
         margin-left: 0;
         margin-right: 0;
     }
-    .right__catalog__card{
+
+    .right__catalog__card {
         margin-left: 0;
         margin-right: 0%;
     }
-    .catalog__style{
+
+    .catalog__style {
         margin-left: 9px;
     }
-    .product__description{
+
+    .product__description {
         max-width: 100vw;
     }
-.product__card{
-    max-width: 100vw;
-}
+
+    .product__card {
+        max-width: 100vw;
+    }
+
+    img.card__map {
+        display: none;
+    }
+
+    /*registration*/
+    .registration {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration__btn {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .loyalty {
+        width: 96%;
+        padding: 40px 10px 0;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -1523,16 +1638,19 @@ button:hover {
     .header__right {
         margin-right: -15px;
     }
+
     h4.catalog__card__filter {
         display: none;
     }
-    .catalog__card__nav{
+
+    .catalog__card__nav {
         font-size: 12px;
         line-height: 14px;
 
         color: #6F6E6E;
     }
-    svg.catalog__card__filter{
+
+    svg.catalog__card__filter {
         width: 38px;
         height: 25px;
         margin-left: 0;
@@ -1557,11 +1675,11 @@ button:hover {
         width: auto;
         margin-right: 0;
     }
-    /*catalog*/
-    .left__catalog__card__filter{
-        width:0;
-    }
 
+    /*catalog*/
+    .left__catalog__card__filter {
+        width: 0;
+    }
 
 
     .menu__catalog__background {
@@ -1620,10 +1738,12 @@ button:hover {
         line-height: 22px;
 
     }
-    .communication{
+
+    .communication {
         margin-top: 54px;
     }
-    .catalog__style{
+
+    .catalog__style {
         margin-left: 9px;
     }
 
@@ -1642,30 +1762,36 @@ button:hover {
         padding-bottom: 9px;
         padding-top: 40px;
     }
-    .right__catalog{
+
+    .right__catalog {
         margin-left: 0;
         margin-right: 0;
     }
-    .right__catalog__card{
+
+    .right__catalog__card {
         margin-left: 0;
         margin-right: -7%;
     }
-/*    produkt*/
 
-.product__description__view{
-    font-size: 10px;
-    line-height: 12px;
-    /* identical to box height */
+    /*    produkt*/
+    .product__description__view {
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
+    }
 
+    .product__description {
+        max-width: 100vw;
+    }
 
-    color: #6F6E6E;
-}
-.product__description{
-    max-width: 100vw;
-}
-.product__card{
-    flex-wrap: wrap;
-    width: 95vw;
+    .product__card {
+        flex-wrap: wrap;
+        width: 95vw;
+    }
+
+    /*registration*/
+    .registration__form {
+        align-items: center;
     }
 
 }
