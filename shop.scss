@@ -293,6 +293,16 @@ body {
   background: #FFFFFF;
   cursor: pointer;
 }
+.btn__cart__send h3{
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+}
+.cart__registration {
+  text-decoration: none;
+  color: #000000;
+}
 
 
 .cart__contents__quote{
@@ -372,7 +382,7 @@ body {
 
 
 section {
-  background: url("img/main/footer/background photo subscribe.png");
+  background: url("img/main/footer/background-photo-subscribe.png");
 background-size: 100vw;
   height: 448px;
   display: flex;
@@ -751,6 +761,7 @@ svg.footer__bottom__icon:hover {
       line-height: 14px;
       text-align: center;
       color: #575757;
+
 margin: 8px 16px;
 
     }

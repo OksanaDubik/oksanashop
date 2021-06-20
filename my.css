@@ -216,7 +216,7 @@ body {
 }
 
 .block__men {
-    background-image: url("img/main/block/for men.png");
+    background-image: url("img/main/block/for-men.png");
 }
 
 .block__kids {
@@ -300,7 +300,6 @@ body {
 
 .card__product {
     width: 360px;
-    /*    margin(none: nth-child(3)): 0 30px 30 px 0;*/
     background: #F8F8F8;
     margin-bottom: 30px;
 }
@@ -406,7 +405,7 @@ body {
 
 /*беграунд -картинка*/
 section {
-    background: url("img/main/footer/background photo subscribe.png");
+    background: url("img/main/footer/background-photo-subscribe.png");
     height: 448px;
     display: flex;
     justify-content: center;
@@ -602,7 +601,7 @@ svg.footer__bottom__icon:hover {
     position: relative;
     width: 360px;
     padding-top: 16px;
-    padding-left: 11px;
+    padding-left: 17px;
 }
 
 .left__catalog__card::-webkit-details-marker {
@@ -628,6 +627,7 @@ svg.footer__bottom__icon:hover {
     width: 360px;
     height: 531px;
     z-index: 1;
+    left: 230px;
 }
 
 h4.menu__catalog {
@@ -636,6 +636,7 @@ h4.menu__catalog {
 
 .left__catalog__card__header {
     display: flex;
+    /*padding-left: 13px;*/
 }
 
 .left__catalog__card__list {
@@ -667,7 +668,7 @@ ul {
 
 .left__catalog__card__section {
     padding-bottom: 11px;
-    padding-left: 17px;
+    padding-left: 10px;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -715,6 +716,9 @@ svg.catalog__card__filter {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+}
+.catalog__input{
+    display: flex;
 }
 
 .right__catalog__size {
@@ -988,6 +992,9 @@ label {
     background: none;
     cursor: pointer;
 }
+.basket a{
+    display: flex;
+}
 
 .basket__link :hover {
     transition: all 1s;
@@ -1059,7 +1066,7 @@ label {
     display: flex;
     flex-direction: column;
     background: none;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .registration__form h4 {
@@ -1084,9 +1091,23 @@ label {
     align-items: baseline;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 132px;
+    width: 208px;
     margin-left: -10px;
 }
+.registration__radio__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 70%;
+}
+.registration__radio__righ{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 30%;
+    opacity: 0;
+}
+
 
 .registration__radio input {
     margin-top: 0;
@@ -1117,6 +1138,14 @@ label {
     border: none;
     cursor: pointer;
     display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fbfbfb;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-left: 20px;
+
 }
 
 
@@ -1142,7 +1171,7 @@ button:hover {
 
 .registration__btn svg {
     fill: white;
-    margin: 20px 15px 20px 0;
+    margin: 20px 15px 20px 15px;
 }
 
 .loyalty {
@@ -1258,7 +1287,7 @@ button:hover {
     .block__men {
         width: 232px;
         height: 168px;
-        background-image: url("img/main/block/prtview768.png"), url("img/main/block/for men768.png");
+        background-image: url("img/main/block/prtview768.png"), url("img/main/block/for-men768.png");
         background-repeat: no-repeat;
     }
 
@@ -1319,10 +1348,8 @@ button:hover {
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-        /*font-style: italic;*/
         color: #222224;
-
-    }
+}
 
     .footer__bottom__address {
         padding: 24px 16px 0;
@@ -1352,6 +1379,35 @@ button:hover {
     .turn__pages {
         margin-top: 24px;
     }
+/*    registration*/
+    .loyalty{
+        margin-left: 0;
+        width: 35%;
+    }
+    .loyalty header{
+        font-size: 16px;
+        line-height: 19px;
+margin-bottom: 32px;
+    }
+    .loyalty p{
+        font-size: 16px;
+        line-height: 19px
+    }
+    .loyalty li{
+        font-size: 16px;
+        line-height: 19px
+    }
+    .registration{
+        padding-top: 40px;
+        justify-content: space-evenly;
+        padding-bottom: 96px;
+
+    }
+
+    .registration__radio__righ{
+        opacity: 1;
+    }
+
 
 
 }
@@ -1458,7 +1514,7 @@ button:hover {
     }
 
     .block__men {
-        background-image: url("img/main/block/for men.png");
+        background-image: url("img/main/block/for-men.png");
         width: 360px;
         height: 260px;
     }
@@ -1522,6 +1578,20 @@ button:hover {
 .product__card{
     max-width: 100vw;
 }
+/*registration*/
+    .registration{
+        flex-direction: column;
+        align-items: center;
+    }
+    .registration__btn{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .loyalty{
+        width: 96%;
+        padding: 40px 10px 0;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -1664,9 +1734,6 @@ button:hover {
 .product__description__view{
     font-size: 10px;
     line-height: 12px;
-    /* identical to box height */
-
-
     color: #6F6E6E;
 }
 .product__description{
@@ -1675,6 +1742,10 @@ button:hover {
 .product__card{
     flex-wrap: wrap;
     width: 95vw;
+    }
+/*registration*/
+    .registration__form{
+        align-items: center;
     }
 
 }
