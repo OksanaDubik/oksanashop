@@ -174,9 +174,10 @@ body {
     font-weight: 400;
 }
 
-.menu__item__subtitle a{
+.menu__item__subtitle a {
     color: #F16D7F;
 }
+
 .list__content {
     padding-bottom: 11px;
     padding-left: 21px;
@@ -186,7 +187,8 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
-.list__content a{
+
+.list__content a {
     color: #6F6E6E;
 }
 
@@ -351,7 +353,8 @@ body {
     background: #E05C6E;
     color: #FFFFFF;
 }
-.card{
+
+.card {
     border: none;
     background: none;
 }
@@ -535,7 +538,8 @@ svg.footer__bottom__icon:hover {
     padding: 9px;
 
 }
-.footer__bottom__contact a{
+
+.footer__bottom__contact a {
     text-decoration: none;
 }
 
@@ -706,9 +710,7 @@ svg.catalog__card__filter {
 }
 
 
-
-
-    /*всплывающее меню size*/
+/*всплывающее меню size*/
 .right__catalog {
 
     margin-right: 29px;
@@ -717,7 +719,8 @@ svg.catalog__card__filter {
     align-items: center;
     box-sizing: border-box;
 }
-.catalog__input{
+
+.catalog__input {
     display: flex;
 }
 
@@ -850,7 +853,6 @@ label {
 }
 
 
-
 .product__background__photo {
     margin-top: -57px;
     position: absolute;
@@ -867,13 +869,10 @@ label {
 }
 
 
-
-.arrow__left:hover{
+.arrow__left:hover {
     background: rgba(42, 42, 42, 0.15);
     fill: #F16D7F;
 }
-
-
 
 
 .arrow__right {
@@ -992,7 +991,8 @@ label {
     background: none;
     cursor: pointer;
 }
-.basket a{
+
+.basket a {
     display: flex;
 }
 
@@ -1094,13 +1094,15 @@ label {
     width: 208px;
     margin-left: -10px;
 }
-.registration__radio__left{
+
+.registration__radio__left {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 70%;
 }
-.registration__radio__righ{
+
+.registration__radio__righ {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -1207,12 +1209,14 @@ button:hover {
 .loyalty ul {
     margin-left: 23px;
 }
-.wrapper{
+
+.wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-.central{
+
+.central {
     flex-grow: 1;
 }
 
@@ -1268,10 +1272,12 @@ button:hover {
         line-height: 53px;
         color: #222222;
     }
+
     .card__product:nth-child(3) {
         display: none;
     }
-    .product__card{
+
+    .product__card {
         justify-content: space-evenly;
     }
 
@@ -1355,7 +1361,7 @@ button:hover {
         line-height: 24px;
         text-align: center;
         color: #222224;
-}
+    }
 
     .footer__bottom__address {
         padding: 24px 16px 0;
@@ -1385,35 +1391,39 @@ button:hover {
     .turn__pages {
         margin-top: 24px;
     }
-/*    registration*/
-    .loyalty{
+
+    /*    registration*/
+    .loyalty {
         margin-left: 0;
         width: 35%;
     }
-    .loyalty header{
+
+    .loyalty header {
         font-size: 16px;
         line-height: 19px;
-margin-bottom: 32px;
+        margin-bottom: 32px;
     }
-    .loyalty p{
+
+    .loyalty p {
         font-size: 16px;
         line-height: 19px
     }
-    .loyalty li{
+
+    .loyalty li {
         font-size: 16px;
         line-height: 19px
     }
-    .registration{
+
+    .registration {
         padding-top: 40px;
         justify-content: space-evenly;
         padding-bottom: 96px;
 
     }
 
-    .registration__radio__righ{
+    .registration__radio__righ {
         opacity: 1;
     }
-
 
 
 }
@@ -1444,7 +1454,8 @@ margin-bottom: 32px;
         background-size: 1600px;
         background: url("img/main/footer/background1024.png");
     }
-    .footer{
+
+    .footer {
         margin-top: 102px;
     }
 
@@ -1464,7 +1475,6 @@ margin-bottom: 32px;
     /*.footer {*/
     /*    margin-top: 63px;*/
     /*}*/
-
     section {
         width: 768px;
         height: 693px;
@@ -1492,6 +1502,7 @@ margin-bottom: 32px;
     .card__product:nth-child(3) {
         display: none;
     }
+
     /*img.card__map {*/
     /*    display: block;*/
     /*}*/
@@ -1574,37 +1585,45 @@ margin-bottom: 32px;
     .footer__bottom {
         height: 143px;
     }
-    .right__catalog{
+
+    .right__catalog {
         margin-left: 0;
         margin-right: 0;
     }
-    .right__catalog__card{
+
+    .right__catalog__card {
         margin-left: 0;
         margin-right: 0%;
     }
-    .catalog__style{
+
+    .catalog__style {
         margin-left: 9px;
     }
-    .product__description{
+
+    .product__description {
         max-width: 100vw;
     }
-.product__card{
-    max-width: 100vw;
-}
+
+    .product__card {
+        max-width: 100vw;
+    }
+
     img.card__map {
         display: none;
     }
 
-/*registration*/
-    .registration{
+    /*registration*/
+    .registration {
         flex-direction: column;
         align-items: center;
     }
-    .registration__btn{
+
+    .registration__btn {
         margin-right: 0;
         margin-bottom: 40px;
     }
-    .loyalty{
+
+    .loyalty {
         width: 96%;
         padding: 40px 10px 0;
     }
@@ -1619,16 +1638,19 @@ margin-bottom: 32px;
     .header__right {
         margin-right: -15px;
     }
+
     h4.catalog__card__filter {
         display: none;
     }
-    .catalog__card__nav{
+
+    .catalog__card__nav {
         font-size: 12px;
         line-height: 14px;
 
         color: #6F6E6E;
     }
-    svg.catalog__card__filter{
+
+    svg.catalog__card__filter {
         width: 38px;
         height: 25px;
         margin-left: 0;
@@ -1653,11 +1675,11 @@ margin-bottom: 32px;
         width: auto;
         margin-right: 0;
     }
-    /*catalog*/
-    .left__catalog__card__filter{
-        width:0;
-    }
 
+    /*catalog*/
+    .left__catalog__card__filter {
+        width: 0;
+    }
 
 
     .menu__catalog__background {
@@ -1716,10 +1738,12 @@ margin-bottom: 32px;
         line-height: 22px;
 
     }
-    .communication{
+
+    .communication {
         margin-top: 54px;
     }
-    .catalog__style{
+
+    .catalog__style {
         margin-left: 9px;
     }
 
@@ -1738,30 +1762,35 @@ margin-bottom: 32px;
         padding-bottom: 9px;
         padding-top: 40px;
     }
-    .right__catalog{
+
+    .right__catalog {
         margin-left: 0;
         margin-right: 0;
     }
-    .right__catalog__card{
+
+    .right__catalog__card {
         margin-left: 0;
         margin-right: -7%;
     }
-/*    produkt*/
 
-.product__description__view{
-    font-size: 10px;
-    line-height: 12px;
-    color: #6F6E6E;
-}
-.product__description{
-    max-width: 100vw;
-}
-.product__card{
-    flex-wrap: wrap;
-    width: 95vw;
+    /*    produkt*/
+    .product__description__view {
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
     }
-/*registration*/
-    .registration__form{
+
+    .product__description {
+        max-width: 100vw;
+    }
+
+    .product__card {
+        flex-wrap: wrap;
+        width: 95vw;
+    }
+
+    /*registration*/
+    .registration__form {
         align-items: center;
     }
 
