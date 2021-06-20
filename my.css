@@ -640,7 +640,6 @@ h4.menu__catalog {
 
 .left__catalog__card__header {
     display: flex;
-    /*padding-left: 13px;*/
 }
 
 .left__catalog__card__list {
@@ -704,9 +703,10 @@ svg.catalog__card__filter {
 .right__catalog__card {
     box-sizing: border-box;
     display: flex;
-    /*align-items: center;*/
     position: absolute;
-    margin-left: 400px;
+    width: 411px;
+    margin-left: 368px;
+    justify-content: space-around;
 }
 
 
@@ -726,7 +726,7 @@ svg.catalog__card__filter {
 
 .right__catalog__size {
     width: 79px;
-    position: relative;
+    position: absolute;
 }
 
 .right__catalog__size::-webkit-details-marker {
@@ -738,7 +738,6 @@ svg.catalog__card__filter {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 79px;
     z-index: 1;
-    /*position: relative;*/
     padding: 5px;
 }
 
@@ -869,9 +868,10 @@ label {
 }
 
 
-.arrow__left:hover {
+.arrow__left:hover{
     background: rgba(42, 42, 42, 0.15);
     fill: #F16D7F;
+
 }
 
 
